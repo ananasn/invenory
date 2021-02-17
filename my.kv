@@ -1,0 +1,29 @@
+GridLayout:
+    cols:2
+    Label:
+        text:"Имя"
+    TextInput:
+        id: item_name
+        multiline: False
+    Label:
+        text:"Описание"
+    TextInput:
+        id: item_description
+        multiline: True
+    Label:
+        text:"Место хранения"
+    TextInput:
+        id:item_place
+        multiline: True
+    Label:
+        text:"Количество"
+    NumericInput:
+        id:items_number
+        input_type:"number"
+        min_value: 0
+        max_value: 9999
+    Button:
+        text:"Добавить фото"
+    Button:
+        text:"Записать"
+        on_press: app.print_str([item_name.text, item_description.text, item_place.text, items_number.text])

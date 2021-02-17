@@ -1,0 +1,1 @@
+Ссылка на ТЗ: https://docs.google.com/document/d/12tVF3CWo4MmlTrwMqwNbmrBMtJWGLQymk0Ulq987L-k/edit?usp=sharing

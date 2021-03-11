@@ -40,7 +40,7 @@ ScreenManager:
         name: "camera_screen"
         BoxLayout:
             orientation: "vertical"
-            XCamera:
+            MyXCamera:
                 id: xcamera
                 play: True
                 on_picture_taken: app.root.current = "main";  xcamera.restore_orientation()

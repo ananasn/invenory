@@ -31,7 +31,7 @@ ScreenManager:
                 max_value: 9999
             Button:
                 text:"Добавить фото"
-                on_press: app.root.current = "camera_screen"
+                on_press: app.root.current = "camera_screen"; xcamera.force_landscape()
             Button:
                 text:"Записать"
                 on_press: app.print_str([item_name.text, item_description.text, item_place.text, items_number.text])
@@ -43,5 +43,4 @@ ScreenManager:
             XCamera:
                 id: xcamera
                 play: True
-                on_camera_ready: xcamera.force_landscape()
-                on_picture_taken: app.root.current = "main"
+                on_picture_taken: app.root.current = "main";  xcamera.restore_orientation()

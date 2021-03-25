@@ -34,7 +34,7 @@ ScreenManager:
                 on_press: app.root.current = "camera_screen"; xcamera.force_landscape()
             Button:
                 text:"Записать"
-                on_press: app.print_str([item_name.text, item_description.text, item_place.text, items_number.text])
+                on_press: app.send([item_name.text, item_description.text, item_place.text, items_number.text], xcamera.imageb64)
     Screen:
         id: camera_screen
         name: "camera_screen"
